@@ -1,0 +1,20 @@
+/*
+* Star-rating component
+*/
+.star {
+    color: var(--color-background);
+    font-size: var(--rating-star-size);
+}
+.star::before {
+    content: '\f005';
+}
+[data-rating] {
+    cursor: default;
+}
+[data-rating='1'] > .star:nth-of-type(-n+1),
+[data-rating='2'] > .star:nth-of-type(-n+2),
+[data-rating='3'] > .star:nth-of-type(-n+3),
+[data-rating='4'] > .star:nth-of-type(-n+4),
+[data-rating='5'] > .star:nth-of-type(-n+5) {
+    color: var(--color-primary);
+}

@@ -1,0 +1,26 @@
+:root {
+    /* colors */
+    --blue: #0065FC;
+    --lightblue: #DEEBFF;
+    --lightgray: #F2F2F2;
+    --color-primary: var(--blue);
+    --color-secondary: var(--lightblue);
+    --color-background: var(--lightgray);
+
+    /* typography */
+    --base-font-size: 1.5rem;
+    --rating-star-size: 1.3rem;
+}
+
+*, ::before, ::after {
+    font-family: 'Raleway';
+}
+
+html {
+    /* 16px * 62.5% : 1rem = 10px on most browsers */
+    font-size: 62.5%;
+}
+
+body {
+    font-size: var(--base-font-size);
+}
