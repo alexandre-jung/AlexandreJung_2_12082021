@@ -10,6 +10,7 @@
     /* typography */
     --base-font-size: 1.5rem;
     --rating-star-size: 1.3rem;
+    --rating-star-padding: 0.2em;
 }
 
 *, ::before, ::after {

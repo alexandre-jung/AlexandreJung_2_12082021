@@ -1,14 +1,17 @@
 /*
-* Star-rating component
+* Star rating component
 */
 .star {
-    color: var(--color-background);
     font-size: var(--rating-star-size);
+    padding: var(--rating-star-padding);
 }
 .star::before {
     content: '\f005';
 }
 [data-rating] {
+    color: var(--color-background);
+    display: flex;
+    flex: 0 0;
     cursor: default;
 }
 [data-rating='1'] > .star:nth-of-type(-n+1),
@@ -18,3 +21,33 @@
 [data-rating='5'] > .star:nth-of-type(-n+5) {
     color: var(--color-primary);
 }
+
+/*
+* Star rating component with compact HTML
+*/
+[data-rating-v2] {
+    font-size: var(--rating-star-size);
+    letter-spacing: calc(var(--rating-star-padding) * 2);
+    padding-top: var(--rating-star-padding);
+    padding-bottom: var(--rating-star-padding);
+}
+[data-rating-v2]::before {
+    content: '';
+    color: var(--color-primary);
+    padding-left: var(--rating-star-padding);
+}
+[data-rating-v2]::after {
+    content: '';
+    color: var(--color-background); 
+    padding-right: var(--rating-star-padding);
+}
+[data-rating-v2='1']::before { content: '\f005'; }
+[data-rating-v2='2']::before { content: '\f005\f005'; }
+[data-rating-v2='3']::before { content: '\f005\f005\f005'; }
+[data-rating-v2='4']::before { content: '\f005\f005\f005\f005'; }
+[data-rating-v2='5']::before { content: '\f005\f005\f005\f005\f005'; }
+[data-rating-v2='0']::after { content: '\f005\f005\f005\f005\f005'; }
+[data-rating-v2='1']::after { content: '\f005\f005\f005\f005'; }
+[data-rating-v2='2']::after { content: '\f005\f005\f005'; }
+[data-rating-v2='3']::after { content: '\f005\f005'; }
+[data-rating-v2='4']::after { content: '\f005'; }
