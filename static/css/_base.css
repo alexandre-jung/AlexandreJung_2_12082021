@@ -11,10 +11,22 @@
     --base-font-size: 1.5rem;
     --rating-star-size: 1.3rem;
     --rating-star-padding: 0.2em;
+
+    /* sizing */
+    --document-x-padding: 0;
 }
 
 *, ::before, ::after {
     font-family: 'Raleway';
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Let the body cover the viewport */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -24,4 +36,8 @@ html {
 
 body {
     font-size: var(--base-font-size);
+}
+
+header, main, footer, section {
+    padding: 25px;
 }
