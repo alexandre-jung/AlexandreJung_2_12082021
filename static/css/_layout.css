@@ -23,6 +23,8 @@
 
 #footer {
     background-color: var(--color-background);
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 #popular {
