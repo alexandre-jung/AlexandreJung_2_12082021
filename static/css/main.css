@@ -1,7 +1,7 @@
-@import '_base.css';
-@import '_layout.css';
-@import '_modules.css';
-@import '_components.css';
-@import '_states.css';
-@import '_theme.css';
+@import 'base.css';
+@import 'layout.css';
+@import 'modules.css';
+@import 'components.css';
+@import 'states.css';
+@import 'theme.css';
 @import 'fa.solid.custom.min.css';
