@@ -74,6 +74,13 @@ nav h3 {
     margin-bottom: 10px;
 }
 
+ul[data-title]::before {
+    content: attr(data-title);
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+
 .anchor {
     scroll-margin-top: 70px;
 }
