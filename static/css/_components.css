@@ -167,6 +167,7 @@
     position: relative;
     top: -2px;
     left: -2px;
+    z-index: 0;
 }
 
 .bill::before { content: '\f53a'; }
