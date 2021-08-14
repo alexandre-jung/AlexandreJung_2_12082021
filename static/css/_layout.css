@@ -7,12 +7,14 @@
     on large devices, it will still be centered */
     width: 100%;
     margin: auto;
-    padding-left: var(--document-x-padding);
-    padding-right: var(--document-x-padding);
+    scroll-margin-top: 200px;
 }
 
 #header {
     padding: 0;
+    position: sticky;
+    top: -80px;
+    background-color: white;
 }
 
 #main {

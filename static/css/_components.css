@@ -1,4 +1,57 @@
 /*
+* Navigation bar
+*/
+.navbar {
+    padding: 0;
+}
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar-nav a {
+    margin-top: 30px;
+}
+.navbar-brand {
+    position: absolute;
+    height: 45px;
+    top: 25px;
+    left: 25px;
+}
+.navbar-brand a {
+    display: inline-block;
+    height: 100%;
+}
+.navbar-brand img {
+    height: 100%;
+}
+.nav-item {
+    flex: 1 0 50%;
+    text-align: center;
+    padding-bottom: 8px;
+    border-bottom: 3px solid var(--color-background);
+    font-weight: 500;
+    --base-top-margin: 40px;
+}
+.navbar-nav a {
+    /* keep the navbar links centered on its position on font size changes */
+    margin-top: calc(var(--base-top-margin) - 0.5em);
+}
+.nav-item.active {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+#signup {
+    flex: 1 0 100%;
+    text-align: right;
+    padding-right: 25px;
+    padding-bottom: 0;
+    border: none;
+    color: var(--color-primary);
+    font-weight: bold;
+    --base-top-margin: 45px;
+}
+
+/*
 * Star rating component
 */
 .star {
