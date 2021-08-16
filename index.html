@@ -65,9 +65,16 @@
             <header>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
-            </header>
 
-            <section>
+                <form method='GET' action='#' class='search-form' id='search-form'>
+                    <label for='search' class='prepend fa map-marker'>
+                    </label>
+                    <input type="text" value='Marseille, France' class='search-field' id='search'>
+                    <button type="submit" class='append bold white' form='search-form'>
+                        <span class="fa search"></span>
+                    </button>
+                </form method='GET' action='#'>
+
                 <ul class='filter-list' data-title='filtres'>
                     <!-- It is ok to omit closing tags </li> in a list,
                             this way we can avoid whitespaces between inline elements
@@ -78,7 +85,11 @@
                     <li class='filter heart'>romantique
                     <li class='filter dog'>animaux autorisés
                 </ul>
-            </section>
+
+                <p class='tip info'>
+                    <small>Plus de 500 logements sont disponibles dans cette ville</small>
+                </p>
+            </header>
 
             <div id="top-section">
                 <section id='popular'>

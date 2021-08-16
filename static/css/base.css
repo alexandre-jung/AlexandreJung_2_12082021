@@ -85,6 +85,15 @@ ul[data-title]::before {
     text-transform: capitalize;
 }
 
+label, input, button {
+    font-size: inherit;
+}
+
+small {
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
 .anchor {
     scroll-margin-top: 70px;
 }

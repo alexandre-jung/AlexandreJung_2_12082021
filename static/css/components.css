@@ -170,3 +170,80 @@
 .child::before { content: '\f1ae'; }
 .heart::before { content: '\f004'; }
 .dog::before { content: '\f6d3'; }
+.map-marker::before { content: '\f3c5'; }
+.search::before { content: '\f002'; }
+.info::before {
+    content: '\f129';
+
+    /* sizing */
+    height: 25px;
+    width: 25px;
+
+    /* center text */
+    line-height: 25px;
+    text-align: center;
+
+    /*  */
+    position: relative;
+    top: -5px;
+
+    color: var(--color-primary);
+    font-size: 0.75em;
+    border: 1px solid lightgray;
+    border-radius: 100%;
+
+    float: left;
+    margin-right: 10px;
+}
+.info::after {
+    content: '';
+    clear: both;
+}
+
+.info.tip {
+    margin-top: 35px;
+}
+
+/* 
+* Search bar component
+*/
+.search-form {
+    height: 50px;
+    display: flex;
+    font-size: 1.1em;
+}
+label.prepend {
+    background-color: var(--color-background);
+    /* center the icon (::before inherit these two props) */
+    line-height: 50px;
+    text-align: center;
+    /* fixed width */
+    flex: 0 0 50px;
+    /* round left borders */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.search-field {
+    border: 1px solid var(--color-background);
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-grow: 1;
+    min-width: 200px;
+    font-weight: bold;
+}
+button.append {
+    border: none;
+    background-color: var(--color-primary);
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    left: -10px;
+    color: white;
+    flex: 0 0 50px;
+}
+form {
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
