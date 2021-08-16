@@ -44,6 +44,10 @@ header, main, footer, section {
     padding: 25px;
 }
 
+h1 {
+    font-size: 1.4em;
+}
+
 div {
     padding: 0;
 }
