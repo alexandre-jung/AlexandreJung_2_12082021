@@ -241,6 +241,7 @@ button.append {
     left: -10px;
     color: white;
     flex: 0 0 50px;
+    cursor: pointer;
 }
 form {
     font-weight: bold;
