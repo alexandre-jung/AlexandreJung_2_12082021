@@ -247,3 +247,113 @@ form {
     margin-top: 35px;
     margin-bottom: 20px;
 }
+
+/* 
+* Card component
+*/
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card:not(:first-child) {
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    /* magic of overflow: hidden to
+    force CSS to not expand the card
+    by letting images grow */
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 2px 2px 6px rgb(196, 196, 196);
+    border-radius: 15px;
+    font-size: 0.9em;
+    /* restrict the horizontal card shrinking
+    on very narrow screens */
+    min-width: 280px;
+    padding: 5px;
+
+    /* default layout: vertical */
+    flex-direction: column;
+    /* fix the size of the flex item on column
+    (no fixed height) but let it grow on row */
+    flex: 1 1 200px;
+
+    transition: transform 150ms ease-in-out;
+}
+
+.card:hover {
+    transform: scale(105%);
+}
+
+.card-h {
+    /* horizontal layout */
+    flex-direction: row;
+    /* fix the size of the flex item on column
+    (no fixed height) but let it grow on row */
+    flex: 1 0 150px;
+}
+
+.card * {
+    /* remove all card's content's spacing */
+    margin: 0;
+    padding: 0;
+}
+
+.card .card-image {
+    /* keep image's aspect ratio */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* let the image grow and shrink */
+    flex: 1 1 100px;
+    /* round right corners */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.card .card-description {
+    /* let the description grow and
+    push the footer downwards */
+    flex: 1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card .card-rating {
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.card.card-h .card-image {
+    /* round left corners */
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 10px;
+}
+
+.card.card-h .card-body {
+    /* below 128px the body content will overflow */
+    flex: 2 0 128px;
+    margin-right: 20px;
+}
+
+.card-alt {
+    /* alternative cards does not have borders */
+    padding: 0;
+}
+
+.card-alt .card-body {
+    /* alternative cards have a bit more padding
+    around their body */
+    margin: 20px;
+}
