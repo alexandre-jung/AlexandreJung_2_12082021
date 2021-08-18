@@ -97,6 +97,14 @@ label, input, button {
     font-size: inherit;
 }
 
+input {
+    outline: none;
+    margin-right: -2px;
+}
+input:focus {
+    border-color: var(--color-primary);
+}
+
 small {
     font-size: 0.95em;
     font-weight: 500;

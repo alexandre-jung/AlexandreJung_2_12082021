@@ -229,6 +229,9 @@ label.prepend {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
+label.prepend:hover {
+    cursor: pointer;
+}
 .search-field {
     border: 1px solid var(--color-background);
     padding-left: 15px;
@@ -236,6 +239,12 @@ label.prepend {
     flex-grow: 1;
     min-width: 200px;
     font-weight: bold;
+}
+.search-field::placeholder {
+    font-size: 0.8em;
+}
+.search-field:focus {
+    background-color: #f5f8fd;
 }
 button.append {
     border: none;
@@ -248,6 +257,10 @@ button.append {
     color: white;
     flex: 0 0 50px;
     cursor: pointer;
+    transition: background-color 150ms;
+}
+button.append:hover {
+    background-color: #0056d6;
 }
 form {
     font-weight: bold;
