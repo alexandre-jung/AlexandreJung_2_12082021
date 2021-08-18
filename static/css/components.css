@@ -259,6 +259,7 @@ form {
 * Card component
 */
 .card-container {
+    /* flex avoids margin collapsing on children */
     display: flex;
     flex-direction: column;
 }
@@ -274,15 +275,11 @@ form {
     /* restrict the horizontal card shrinking
     on very narrow screens */
     min-width: 280px;
+    height: 190px;
     padding: 5px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-
+    margin: 7px 0;
     /* default layout: vertical */
     flex-direction: column;
-    /* fix the size of the flex item on column
-    (no fixed height) but let it grow on row */
-    flex: 1 1 200px;
 
     background-color: white;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
@@ -296,9 +293,7 @@ form {
 .card-h {
     /* horizontal layout */
     flex-direction: row;
-    /* fix the size of the flex item on column
-    (no fixed height) but let it grow on row */
-    flex: 1 0 150px;
+    height: 145px;
 }
 
 .card * {
@@ -316,26 +311,25 @@ form {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     overflow: hidden;
-    background-color: red;
-    /*
-    IMPORTANT: do not specify width / height
-    or images will break (at least on chrome,
-    this problem did not appear on firefox)
-    */
 }
 
 .card .card-body {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 6px 10px;
+}
+
+.card-v .card-body {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .card .card-description {
     /* let the description grow and
     push the footer downwards */
     flex: 1;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 .card .card-rating {
@@ -359,10 +353,12 @@ form {
 .card-alt {
     /* alternative cards does not have borders */
     padding: 0;
+    margin: 12px 0;
+    height: 190px;
 }
 
 .card-alt .card-body {
     /* alternative cards have a bit more padding
     around their body */
-    margin: 20px;
+    margin: 18px;
 }
