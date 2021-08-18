@@ -173,6 +173,7 @@
 .dog::before { content: '\f6d3'; }
 .map-marker::before { content: '\f3c5'; }
 .search::before { content: '\f002'; }
+.chart-line::before { content: '\f201'; }
 .info::before {
     content: '\f129';
 
@@ -200,9 +201,13 @@
     content: '';
     clear: both;
 }
-
 .info.tip {
     margin-top: 35px;
+}
+
+.title-with-icon {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* 
