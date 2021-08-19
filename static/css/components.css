@@ -20,6 +20,8 @@
 .navbar-brand a {
     display: inline-block;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 .navbar-brand img {
     height: 100%;
