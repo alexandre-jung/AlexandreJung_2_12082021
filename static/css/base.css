@@ -40,12 +40,8 @@ body {
     height: 100%;
 }
 
-header, main, footer, section {
+header, main, section {
     padding: 25px;
-}
-
-footer {
-    margin-top: 20px;
 }
 
 h1 {
