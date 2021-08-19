@@ -88,7 +88,7 @@
 }
 [data-rating-v2]::after {
     content: '';
-    color: var(--color-background); 
+    color: var(--gray); 
 }
 [data-rating-v2='1']::before { content: '\f005'; }
 [data-rating-v2='2']::before { content: '\f005\f005'; }

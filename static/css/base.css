@@ -2,6 +2,7 @@
     /* colors */
     --blue: #0065FC;
     --lightblue: #DEEBFF;
+    --gray: lightgray;
     --lightgray: #F2F2F2;
     --color-primary: var(--blue);
     --color-secondary: var(--lightblue);
