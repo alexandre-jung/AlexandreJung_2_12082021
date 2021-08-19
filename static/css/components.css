@@ -53,6 +53,32 @@
     --base-top-margin: 45px;
 }
 
+/* Tablet breakpoint */
+@media screen and (min-width: 768px) {
+    .nav-item, #signup {
+        flex: 0 0;
+        padding-bottom: 0;
+        padding-right: 25px;
+        padding-left: 25px;
+        border-bottom: 0;
+        --base-top-margin: 45px;
+    }
+    #signup {
+        order: 1;
+    }
+
+    #navHousings {
+        margin-left: auto;
+    }
+    .nav-item.active {
+        border-top: 2px solid var(--color-primary);
+    }
+    .nav-item.active a {
+        /* keep centering but 2px higher */
+        margin-top: calc(var(--base-top-margin) - 0.5em - 2px);
+    }
+}
+
 /*
 * Star rating component
 */
