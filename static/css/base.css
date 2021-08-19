@@ -116,3 +116,10 @@ strong {
 .anchor {
     scroll-margin-top: 85px;
 }
+
+/* Tablet breakpoint */
+@media screen and (min-width: 768px) {
+    .anchor {
+        scroll-margin-top: 20px;
+    }
+}
