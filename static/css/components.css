@@ -118,7 +118,6 @@
 
 .filter {
     --icon-size: 4.8rem;
-    display: inline-block;
     text-transform: capitalize;
     vertical-align: middle;
     border: 2px solid lightgray;
