@@ -59,17 +59,16 @@
         position: relative;
         top: 0;
     }
-    #popular > .card-container {
+    .card-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
         padding: 0;
     }
-    #popular .card-container > a {
+    .card-container > a {
         /* 2 cards per row width a 14px margin between them */
         padding: 0;
         width: calc(50% - 7px);
-        
     }
 }
