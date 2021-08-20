@@ -101,7 +101,7 @@
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
     #root {
         max-width: 1600px;
     }
@@ -124,11 +124,11 @@
         width: auto;
     }
     .desktop-left {
-        width: calc(70% - 10px);
+        width: calc(60% - 15px);
     }
     .desktop-right {
         order: 1;
-        width: calc(30% - 10px);
+        width: calc(40% - 15px);
     }
     #popular .card-container {
         flex-direction: column;
@@ -138,26 +138,28 @@
         width: 100%;
     }
     #housings .card-container > a {
-        width: calc(33% - 5px);
+        width: calc(50% - 10px);
     }
     #activities .card-container {
         display: grid;
         width: 100%;
-        grid-template-columns:
-        calc(25% - 14px)
-        calc(25% - 14px)
-        calc(25% - 14px)
-        calc(25% - 14px);
-        grid-template-rows: 250px 250px;
-        row-gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px 200px;
+        column-gap: 40px;
+        row-gap: 40px;
         grid-template-areas:
         'grid-item-1 grid-item-2 grid-item-4 grid-item-5'
         'grid-item-1 grid-item-3 grid-item-4 grid-item-6';
     }
     #activities .card-container > a {
-        width: 100% !important;
-        height: 100% !important;
+        /* width: 100% !important;
+        height: 100% !important; */
+        width: auto !important;
+        height: auto !important;
         max-height: none !important;
+        min-height: 0 !important;
+        max-width: none !important;
+        min-width: 0 !important;
         padding: 0 !important;
     }
     .card-alt {
@@ -182,5 +184,17 @@
     }
     .grid-item-6 {
         grid-area: grid-item-6;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #housings .card-container > a {
+        width: calc(33% - 10px);
+    }
+    .desktop-left {
+        width: calc(70% - 15px);
+    }
+    .desktop-right {
+        width: calc(30% - 15px);
     }
 }
