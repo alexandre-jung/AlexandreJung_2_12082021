@@ -56,8 +56,14 @@
     display: flex;
     flex-direction: column;
 }
+
 .bg-gray {
     background-color: var(--color-background);
+}
+
+#footer-bg {
+    border-radius: 0;
+    width: 100%;
 }
 
 /* Tablet breakpoint */
@@ -86,9 +92,9 @@
 }
 
 @media screen and (min-width: 1000px) {
-    body {
-        padding-left: 20px;
-        padding-right: 20px;
+    #top-section {
+        margin-left: 25px;
+        margin-right: 25px;
     }
     .bg-gray {
         border-radius: 20px;
@@ -133,5 +139,48 @@
     }
     #housings .card-container > a {
         width: calc(33% - 5px);
+    }
+    #activities .card-container {
+        display: grid;
+        width: 100%;
+        grid-template-columns:
+        calc(25% - 14px)
+        calc(25% - 14px)
+        calc(25% - 14px)
+        calc(25% - 14px);
+        grid-template-rows: 250px 250px;
+        row-gap: 20px;
+        grid-template-areas:
+        'grid-item-1 grid-item-2 grid-item-4 grid-item-5'
+        'grid-item-1 grid-item-3 grid-item-4 grid-item-6';
+    }
+    #activities .card-container > a {
+        width: 100% !important;
+        height: 100% !important;
+        max-height: none !important;
+        padding: 0 !important;
+    }
+    .card-alt {
+        height: 100% !important;
+        max-height: none !important;
+        margin: 0 !important;
+    }
+    .grid-item-1 {
+        grid-area: grid-item-1;
+    }
+    .grid-item-2 {
+        grid-area: grid-item-2;
+    }
+    .grid-item-3 {
+        grid-area: grid-item-3;
+    }
+    .grid-item-4 {
+        grid-area: grid-item-4;
+    }
+    .grid-item-5 {
+        grid-area: grid-item-5;
+    }
+    .grid-item-6 {
+        grid-area: grid-item-6;
     }
 }
