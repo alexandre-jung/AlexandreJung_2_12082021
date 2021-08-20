@@ -60,12 +60,6 @@
     background-color: var(--color-background);
 }
 
-@media screen and (min-width: 1000px) {
-    .bg-gray {
-        border-radius: 20px;
-    }
-}
-
 /* Tablet breakpoint */
 @media screen and (min-width: 768px) {
     #header {
@@ -91,6 +85,16 @@
     }
 }
 
+@media screen and (min-width: 1000px) {
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .bg-gray {
+        border-radius: 20px;
+    }
+}
+
 @media screen and (min-width: 1400px) {
     #root {
         max-width: 1600px;
@@ -101,5 +105,33 @@
     .bg-gray-desktop {
         background-color: var(--color-background);
         border-radius: 20px;
+    }
+    #top-section {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .container {
+        width: auto;
+    }
+    #popular {
+        width: auto;
+    }
+    .desktop-left {
+        width: calc(70% - 10px);
+    }
+    .desktop-right {
+        order: 1;
+        width: calc(30% - 10px);
+    }
+    #popular .card-container {
+        flex-direction: column;
+    }
+    #popular .card-container a {
+        flex-direction: column;
+        width: 100%;
+    }
+    #housings .card-container > a {
+        width: calc(33% - 5px);
     }
 }
