@@ -6,6 +6,7 @@
     /* In case we decide to limit the content width
     on large devices, it will still be centered */
     width: 100%;
+    max-width: 1000px;
     margin: auto;
     scroll-margin-top: 200px;
 }
@@ -31,7 +32,6 @@
 }
 
 #popular {
-    background-color: var(--color-background);
     padding-bottom: 35px;
 }
 
@@ -45,10 +45,25 @@
     flex-direction: column;
 }
 
+.container {
+    max-width: 525px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .card-container {
     /* flex avoids margin collapsing on children */
     display: flex;
     flex-direction: column;
+}
+.bg-gray {
+    background-color: var(--color-background);
+}
+
+@media screen and (min-width: 1000px) {
+    .bg-gray {
+        border-radius: 20px;
+    }
 }
 
 /* Tablet breakpoint */
@@ -58,6 +73,9 @@
         so leave it on top of the document */
         position: relative;
         top: 0;
+    }
+    .container {
+        max-width: 1000px;
     }
     .card-container {
         display: flex;
@@ -70,5 +88,18 @@
         /* 2 cards per row width a 14px margin between them */
         padding: 0;
         width: calc(50% - 7px);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #root {
+        max-width: 1600px;
+    }
+    .container {
+        max-width: 1600px;
+    }
+    .bg-gray-desktop {
+        background-color: var(--color-background);
+        border-radius: 20px;
     }
 }
