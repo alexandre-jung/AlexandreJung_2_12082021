@@ -45,6 +45,12 @@
     flex-direction: column;
 }
 
+.card-container {
+    /* flex avoids margin collapsing on children */
+    display: flex;
+    flex-direction: column;
+}
+
 /* Tablet breakpoint */
 @media screen and (min-width: 768px) {
     #header {

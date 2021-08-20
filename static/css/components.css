@@ -318,12 +318,6 @@ form {
 /* 
 * Card component
 */
-.card-container {
-    /* flex avoids margin collapsing on children */
-    display: flex;
-    flex-direction: column;
-}
-
 .card {
     display: flex;
     /* magic of overflow: hidden to
