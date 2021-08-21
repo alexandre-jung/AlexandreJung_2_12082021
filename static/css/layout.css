@@ -89,6 +89,14 @@
         padding: 0;
         width: calc(50% - 7px);
     }
+    #footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #footer > nav {
+        flex: 1 0 50%;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -104,6 +112,9 @@
     }
     .bg-gray {
         border-radius: 20px;
+    }
+    #footer > nav {
+        flex-basis: 33%;
     }
 }
 
