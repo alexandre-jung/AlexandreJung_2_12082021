@@ -96,6 +96,12 @@
         margin-left: 25px;
         margin-right: 25px;
     }
+    #housings {
+        /* Drop the x-padding on large tablets only
+        for visual alignment */
+        padding-left: 0;
+        padding-right: 0;
+    }
     .bg-gray {
         border-radius: 20px;
     }
@@ -104,6 +110,11 @@
 @media screen and (min-width: 1200px) {
     #root {
         max-width: 1600px;
+    }
+    #housings {
+        /* Get the padding back on desktop */
+        padding-left: 25px;
+        padding-right: 25px;
     }
     .container {
         max-width: 1600px;

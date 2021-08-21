@@ -414,5 +414,5 @@ form {
 .card-alt .card-body {
     /* alternative cards have a bit more padding
     around their body */
-    margin: 18px;
+    margin: 18px 15px;
 }
