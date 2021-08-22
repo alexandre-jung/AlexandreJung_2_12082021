@@ -328,7 +328,7 @@ form {
     font-size: 0.9em;
     /* restrict the horizontal card shrinking
     on very narrow screens */
-    min-width: 280px;
+    min-width: 280px;  /* only for mobiles */
     height: 190px;
     padding: 5px;
     margin: 7px 0;
@@ -338,6 +338,14 @@ form {
     background-color: white;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 150ms ease-in-out;
+}
+
+/* Tablet breakpoint */
+@media screen and (min-width: 768px) {
+    .card {
+        /* Avoid grid overflow */
+        min-width: 0;
+    }
 }
 
 .card:hover {

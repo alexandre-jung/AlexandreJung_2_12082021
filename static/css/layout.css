@@ -167,8 +167,8 @@
         width: 100%;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 200px 200px;
-        column-gap: 40px;
-        row-gap: 40px;
+        column-gap: 30px;
+        row-gap: 30px;
         grid-template-areas:
         'grid-item-1 grid-item-2 grid-item-4 grid-item-5'
         'grid-item-1 grid-item-3 grid-item-4 grid-item-6';
