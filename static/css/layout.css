@@ -27,8 +27,10 @@
 
 #footer {
     background-color: var(--color-background);
-    padding: 25px;
     margin-top: 20px;
+}
+#footer > nav > ul {
+    margin: 20px 25px;
 }
 
 #popular {
@@ -89,13 +91,13 @@
         padding: 0;
         width: calc(50% - 7px);
     }
-    #footer {
+    #footer > nav {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    #footer > nav {
-        flex: 1 0 50%;
+    #footer > nav > ul {
+        flex: 1 0 calc(50% - 50px);
     }
 }
 
@@ -113,8 +115,8 @@
     .bg-gray {
         border-radius: 20px;
     }
-    #footer > nav {
-        flex-basis: 33%;
+    #footer > nav > ul {
+        flex-basis: calc(33% - 50px);
     }
 }
 

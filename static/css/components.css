@@ -424,3 +424,12 @@ form {
     around their body */
     margin: 18px 15px;
 }
+
+/*
+* Footer list
+*/
+.footer-list[data-title]::before {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
