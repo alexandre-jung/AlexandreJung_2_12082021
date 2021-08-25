@@ -4,7 +4,7 @@
     "description": "Réservez vos vacances",
     "display": "standalone",
     "background_color": "white",
-    "start_url": "/index.html",
+    "start_url": ".",
     "icons": [
         {
             "src": "static/favicon/calendar-192.png",
