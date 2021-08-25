@@ -164,6 +164,15 @@
     margin-right: 10px;
 }
 
+@media screen and (min-width: 1000px) {
+    .filter-list[data-title]::before {
+        width: auto;
+    }
+    .filter:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
 .filter:hover {
     background-color: var(--color-secondary);
     color: var(--color-primary);
