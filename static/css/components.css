@@ -359,7 +359,7 @@ form {
 }
 
 .card:hover {
-    transform: scale(105%);
+    transform: scale(1.05);
 }
 
 .card-h {
