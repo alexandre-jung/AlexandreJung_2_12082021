@@ -26,6 +26,7 @@
     "url": "https://github.com/alexandre-jung/P2_12082021/issues"
   },
   "dependencies": {
+    "autoprefixer": "^10.3.4",
     "concat": "^1.0.3",
     "copyfiles": "^2.4.1",
     "cssnano": "^5.0.8",
