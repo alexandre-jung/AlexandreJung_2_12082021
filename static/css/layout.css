@@ -63,6 +63,10 @@
     background-color: var(--color-background);
 }
 
+.round {
+    border-radius: 20px;
+}
+
 #footer-bg {
     border-radius: 0;
     width: 100%;
@@ -112,7 +116,7 @@
         padding-left: 0;
         padding-right: 0;
     }
-    .bg-gray {
+    .round-tablet {
         border-radius: 20px;
     }
     #footer > nav > ul {
@@ -134,6 +138,8 @@
     }
     .bg-gray-desktop {
         background-color: var(--color-background);
+    }
+    .round-desktop {
         border-radius: 20px;
     }
     #top-section {
