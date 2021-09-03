@@ -429,6 +429,14 @@ form {
     height: 190px;
 }
 
+@media screen and (min-width: 1200px) {
+    .card-alt {
+        height: 100%;
+        max-height: none;
+        margin: 0;
+    }
+}
+
 .card-alt .card-body {
     /* alternative cards have a bit more padding
     around their body */

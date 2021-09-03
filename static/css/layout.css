@@ -185,11 +185,6 @@
         width: auto;
         min-width: 0; /* required for preventing items to expand too much */
     }
-    .card-alt {
-        height: 100% !important;
-        max-height: none !important;
-        margin: 0 !important;
-    }
     .grid-item-1 {
         grid-area: grid-item-1;
     }
