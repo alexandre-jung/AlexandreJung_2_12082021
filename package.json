@@ -1,0 +1,40 @@
+{
+  "name": "AlexandreJung_2_12082021",
+  "homepage": "https://alexandre-jung.github.io/AlexandreJung_2_12082021/",
+  "version": "1.0.0",
+  "description": "See it running on Github Pages: https://alexandre-jung.github.io/AlexandreJung_2_12082021/",
+  "main": "index.js",
+  "scripts": {
+    "makedir:css": "make-dir build/static/css",
+    "concat:css": "concat -o build/static/css/main.css static/css/base.css static/css/layout.css static/css/components.css static/css/fa.solid.custom.min.css",
+    "minify:css": "postcss build/static/css/main.css -o build/static/css/main.css",
+    "copy:html": "copyfiles index.html build/",
+    "copy:static": "copyfiles \"static/**/*\" -e static/css/* build/",
+    "build": "npm run makedir:css && npm run concat:css && npm run minify:css && npm run copy:html && npm run copy:static",
+    "clean": "rimraf build/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandre-jung/P2_12082021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandre-jung/P2_12082021/issues"
+  },
+  "dependencies": {
+    "concat": "^1.0.3",
+    "copyfiles": "^2.4.1",
+    "cssnano": "^5.0.8",
+    "make-dir-cli": "^3.0.0",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}

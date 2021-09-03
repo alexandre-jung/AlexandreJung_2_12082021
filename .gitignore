@@ -2,3 +2,5 @@
 private
 log
 gitlog
+node_modules/
+build/
