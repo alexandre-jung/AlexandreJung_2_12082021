@@ -1,0 +1,20 @@
+{
+  "name": "AlexandreJung_2_12082021",
+  "version": "1.0.0",
+  "description": "See it running on Github Pages: https://alexandre-jung.github.io/AlexandreJung_2_12082021/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandre-jung/P2_12082021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandre-jung/P2_12082021/issues"
+  },
+  "homepage": "https://github.com/alexandre-jung/P2_12082021#readme"
+}
